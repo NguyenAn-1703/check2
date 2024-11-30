@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm nâng cao</title>
+    <link rel="stylesheet" href="../css/style_AdvSrch.css">
+</head>
+<body>
+    <header>
+        <div style="width: 100%; background-color: #333;"><a href="./index.html"><img src="../img/logo.jpg" alt="thegioididong"></a></div>
+    </header>
+    <main>
+        <section style="margin: 50px auto; width: 60%; background-color: white; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; align-items: center;">
+            <h2 style="text-align: center; margin: 10px 0 20px;">Tìm kiếm nâng cao</h2>
+            <form action="search1.html" style="width: 100%; display: grid; grid-template-columns: 1fr 3fr; row-gap: 20px; column-gap: 20px; align-items: center;">
+                <div style="display: contents;">
+                    <label for="name" style="text-align: left; font-size: 16px; font-weight: 500;">Tên sản phẩm</label>
+                    <input type="text" id="name" required style="width: 100%; height: 35px; padding: 5px 10px; font-size: 16px; border: 1px solid rgb(221, 201, 201); border-radius: 5px;">
+                </div>
+                <div style="display: contents;">
+                    <label for="brand" style="text-align: left; font-size: 16px; font-weight: 500;">Thương hiệu</label>
+                    <select id="brand" style="width: 100%; height: 35px; padding: 5px 10px; font-size: 16px; border: 1px solid rgb(221, 201, 201); border-radius: 5px;">
+                        <option value="kids">KIDS</option>
+                        <option value="moutain">MOUTAIN</option>
+                    </select>
+                </div>
+                <div style="display: contents;">
+                    <label for="priceFrom" style="text-align: left; font-size: 16px; font-weight: 500;">Giá từ</label>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="number" id="priceFrom" style="width: calc(50% - 5px); height: 35px; padding: 5px 10px; font-size: 16px; border: 1px solid rgb(221, 201, 201); border-radius: 5px;">
+                        <span style="font-size: 16px; color: #333;">đến</span>
+                        <input type="number" id="priceTo" style="width: calc(50% - 5px); height: 35px; padding: 5px 10px; font-size: 16px; border: 1px solid rgb(221, 201, 201); border-radius: 5px;">
+                    </div>
+                </div>
+                <button style="grid-column: span 2; width: 40%; font-size: 18px; margin: 20px auto; padding: 10px 15px; border: 2px solid black; background-color: #ffc801; font-weight: bold; cursor: pointer; border-radius: 5px; color: #333; text-align: center; transition: transform 0.2s, box-shadow 0.2s;">
+                    Tìm kiếm
+                </button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
